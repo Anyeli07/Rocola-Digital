@@ -8,9 +8,9 @@
 <body>
     
       <form action="php.php" method="post">
-<label for="canciones">Selecciona tu cancion:</label>
+<h1><label for="canciones">Selecciona tu cancion:</label></h1>
 
-<select name="canciones" id="canciones">
+<select name="canciones" id="canciones" required>
   <option value="cancion1">Cancion 1 </option>
   <option value="cancion2">Cancion 2 </option>
   <option value="cancion3">Cancion 3 </option>
@@ -18,6 +18,14 @@
   <option value="cancion5">Cancion 5 </option>
   
 </select>
+<br>
+<br>
+<br>
+<h1><label for="repeticiones">Repeticiones:</label></h1>
+<input type="number" name="repeticiones" id="repeticiones" min="0" max="500" required>
+
+
+
 <button value="enviar" id="enviar">Enviar</button>
     </form>
 
